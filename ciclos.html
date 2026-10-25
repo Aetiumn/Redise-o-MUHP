@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciclos artísticos · Museo Histórico de Placilla</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER GLOBAL -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="logo-brand">
+        <img src="img/logo-muhp.webp" alt="Museo Histórico de Placilla" class="logo-img">
+      </a>
+      <div class="header-actions">
+        <a href="contacto.html" class="link-contacto">Contacto</a>
+        <a href="agenda-tu-visita.html" class="btn-planea">Agenda tu visita ↗</a>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav-item-icon" title="Inicio">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <path d="M9 22V12h6v10"/>
+            </svg>
+          </a>
+        </li>
+        <li><a href="historia.html">Nosotros</a></li>
+        <li><a href="batalla.html">Batalla de Placilla</a></li>
+        <li><a href="salto-del-agua.html">Patrimonio natural</a></li>
+        <li><a href="hidroelectrica.html">Patrimonio industrial</a></li>
+        <li><a href="arqueologia.html">Arqueología y paleontología</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="ciclos.html" class="active">Ciclos artísticos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-wrapper" style="padding-bottom: 3rem;">
+      <div class="breadcrumb">INICIO / CICLOS ARTÍSTICOS</div>
+      
+      <!-- Encabezado Centrado -->
+      <div style="text-align: center; margin-bottom: 3rem;">
+        <span class="section-tag" style="text-transform: uppercase;">ARTE Y TERRITORIO</span>
+        <h1 class="page-title" style="text-align: center; margin-bottom: 2rem;">Ciclos artísticos</h1>
+      </div>
+
+      <span class="section-tag" style="text-transform: uppercase;">HISTORIAL</span>
+      <h2 style="font-family: var(--font-title); font-size: 2rem; margin-bottom: 1.5rem; font-weight: 400; color: var(--azul-oscuro);">Ciclos pasados</h2>
+      
+      <p style="font-size: 0.95rem; line-height: 1.7; color: #2d3748; margin-bottom: 3rem; text-align: left;">
+        A través de los años, el Museo Histórico de Placilla y el Centro Cultural han abierto espacios para la difusión del arte, la cultura y la memoria de la comunidad de Placilla de Peñuelas. Los ciclos artísticos han sido un pilar fundamental para vincular las expresiones locales con la comunidad, destacando proyectos de apoyo a la creación, artes visuales, literatura y encuentros comunitarios desarrollados entre 2021 y 2023–2025 a partir de recursos concursables y alianzas de gestión colaborativa.
+      </p>
+
+      <!-- CICLO 1 -->
+      <div style="margin-bottom: 4rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.5rem; color: var(--azul-oscuro); margin-bottom: 1rem;">Ciclo de Co creación Artística: Arte, Memorias y Territorios</h3>
+        <p style="font-size: 0.95rem; line-height: 1.7; color: #2d3748; margin-bottom: 1.5rem; text-align: left;">
+          Organizado junto al Centro Cultural Placilla fue financiado a través del Programa de Apoyo a Organizaciones Culturales Colaboradoras (PAOCC) en su respectiva convocatoria.
+          <br><br>
+          El ciclo incluyó talleres de artes visuales, pintura y técnica mixta para vecinas y vecinos de todas las edades, promoviendo la reflexión en torno al paisaje local, la historia barrial y el rescate de la memoria a través de la creación artística colectiva. Se realizaron intervenciones en espacios públicos, muestras de obras comunitarias y la presentación virtual durante los talleres, conversatorios y exposiciones simultáneas.
+        </p>
+
+        <span class="section-tag" style="text-transform: uppercase; margin-bottom: 0.8rem; display: block;">REGISTRO VISUAL</span>
+        
+        <div class="content-grid-2" style="gap: 2rem;">
+          <!-- Galería Fotos Ciclo 1 (Izquierda) -->
+          <div class="gallery-container">
+            <span style="font-size: 0.85rem; color: #234551; font-weight: 600; margin-bottom: 0.3rem; display: block;">Imágenes del ciclo</span>
+            <div class="gallery-main-view">
+              <button class="gallery-nav-btn prev" onclick="changeGalleryImage(-1)">❮</button>
+              <img id="imgCiclo1Main" src="img/ciclos/ciclo1-1.jpg" alt="Imágenes del ciclo 1" loading="lazy">
+              <button class="gallery-nav-btn next" onclick="changeGalleryImage(1)">❯</button>
+            </div>
+            <div class="gallery-thumbs" id="ciclo1Thumbs">
+              <img src="img/ciclos/ciclo1-1.jpg" class="thumb-item active" onclick="setGalleryImage(0)" alt="Ciclo 1 - Foto 1" loading="lazy">
+              <img src="img/ciclos/ciclo1-2.jpg" class="thumb-item" onclick="setGalleryImage(1)" alt="Ciclo 1 - Foto 2" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Videos Ciclo 1 (Derecha) -->
+          <div class="video-gallery-container">
+            <span style="font-size: 0.85rem; color: #234551; font-weight: 600; margin-bottom: 0.3rem; display: block;">Videos</span>
+            <div class="video-player-wrapper">
+              <iframe id="playerCiclo1" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Videos Ciclo 1" allowfullscreen></iframe>
+            </div>
+            <div class="video-selector-list">
+              <button class="video-card-btn active" onclick="setYoutubeVideo('dQw4w9WgXcQ', 'playerCiclo1', this)">Ver Registro 1</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CICLO 2 -->
+      <div style="margin-bottom: 4rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.5rem; color: var(--azul-oscuro); margin-bottom: 1rem;">Ciclo de Vinculación Artístico Local 2022: Somos Arte, somos Territorio, somos Comunidad</h3>
+        <p style="font-size: 0.95rem; line-height: 1.7; color: #2d3748; margin-bottom: 1.5rem; text-align: left;">
+          Puso énfasis en lo local y cómo el arte, como expresión de sentires, saberes, cosmovisión y emociones, permite vincularlo al territorio. Desde la propia mirada de vecinos y vecinas de Placilla de Peñuelas, se produjo un trabajo mancomunado, inspirado en la colectividad del territorio, incluyó diversos públicos que, a su vez, participaron del trabajo creativo. De este modo, los públicos fueron diversos, orientados a cada área de la programación, la cual estuvo trazada a partir de las estaciones del año.
+        </p>
+
+        <span class="section-tag" style="text-transform: uppercase; margin-bottom: 0.8rem; display: block;">ARCHIVO VISUAL</span>
+        
+        <div class="content-grid-2" style="gap: 2rem;">
+          <!-- Galería Fotos Ciclo 2 (Izquierda) -->
+          <div class="gallery-container">
+            <span style="font-size: 0.85rem; color: #234551; font-weight: 600; margin-bottom: 0.3rem; display: block;">Imágenes del ciclo</span>
+            <div class="gallery-main-view">
+              <button class="gallery-nav-btn prev" onclick="changeGalleryImage(-1)">❮</button>
+              <img id="imgCiclo2Main" src="img/ciclos/ciclo2-1.jpg" alt="Imágenes del ciclo 2" loading="lazy">
+              <button class="gallery-nav-btn next" onclick="changeGalleryImage(1)">❯</button>
+            </div>
+            <div class="gallery-thumbs" id="ciclo2Thumbs">
+              <img src="img/ciclos/ciclo2-1.jpg" class="thumb-item active" onclick="setGalleryImage(0)" alt="Ciclo 2 - Foto 1" loading="lazy">
+              <img src="img/ciclos/ciclo2-2.jpg" class="thumb-item" onclick="setGalleryImage(1)" alt="Ciclo 2 - Foto 2" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Videos Ciclo 2 (Derecha) -->
+          <div class="video-gallery-container">
+            <span style="font-size: 0.85rem; color: #234551; font-weight: 600; margin-bottom: 0.3rem; display: block;">Videos</span>
+            <div class="video-player-wrapper">
+              <iframe id="playerCiclo2" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Videos Ciclo 2" allowfullscreen></iframe>
+            </div>
+            <div class="video-selector-list">
+              <button class="video-card-btn active" onclick="setYoutubeVideo('dQw4w9WgXcQ', 'playerCiclo2', this)">Ver Registro 2</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CICLO 3 -->
+      <div style="margin-bottom: 3rem;">
+        <h3 style="font-family: var(--font-title); font-size: 1.5rem; color: var(--azul-oscuro); margin-bottom: 1rem;">Ciclo Artístico Local: «Visualidades, Territorios y Saberes Populares»</h3>
+        <p style="font-size: 0.95rem; line-height: 1.7; color: #2d3748; margin-bottom: 1.5rem; text-align: left;">
+          La línea curatorial se centró en el concepto “visualidades”, es decir a la manera en que se utiliza la percepción y los elementos visuales para crear y comunicar significados estéticos y conceptuales. A través de ellas, se transmitieron cosmovisiones, saberes populares, sentires sociales y las representaciones propias de cada artista. Considerando un enfoque de co-creación y curaduría colectiva que incluyó a vecinos y vecinas del sector, con el propósito de generar comunidades y actividades en torno a diferentes manifestaciones artísticas. Los trabajos que realizaron en los talleres ejecutados por los artistas permitieron acercar la técnica, pero también conllevo la muestra del trabajo colaborativo entre participantes en conjunto con los artistas, consolidando así la base artística comunitaria desde la transversalidad como una consigna para futuras exposiciones temporales.
+        </p>
+
+        <span class="section-tag" style="text-transform: uppercase; margin-bottom: 0.8rem; display: block;">ARCHIVO VISUAL</span>
+        
+        <div class="content-grid-2" style="gap: 2rem;">
+          <!-- Galería Fotos Ciclo 3 (Izquierda) -->
+          <div class="gallery-container">
+            <span style="font-size: 0.85rem; color: #234551; font-weight: 600; margin-bottom: 0.3rem; display: block;">Imágenes del ciclo</span>
+            <div class="gallery-main-view">
+              <button class="gallery-nav-btn prev" onclick="changeGalleryImage(-1)">❮</button>
+              <img id="imgCiclo3Main" src="img/ciclos/ciclo3-1.jpg" alt="Imágenes del ciclo 3" loading="lazy">
+              <button class="gallery-nav-btn next" onclick="changeGalleryImage(1)">❯</button>
+            </div>
+            <div class="gallery-thumbs" id="ciclo3Thumbs">
+              <img src="img/ciclos/ciclo3-1.jpg" class="thumb-item active" onclick="setGalleryImage(0)" alt="Ciclo 3 - Foto 1" loading="lazy">
+              <img src="img/ciclos/ciclo3-2.jpg" class="thumb-item" onclick="setGalleryImage(1)" alt="Ciclo 3 - Foto 2" loading="lazy">
+            </div>
+          </div>
+
+          <!-- Videos Ciclo 3 (Derecha) -->
+          <div class="video-gallery-container">
+            <span style="font-size: 0.85rem; color: #234551; font-weight: 600; margin-bottom: 0.3rem; display: block;">Videos</span>
+            <div class="video-player-wrapper">
+              <iframe id="playerCiclo3" src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Videos Ciclo 3" allowfullscreen></iframe>
+            </div>
+            <div class="video-selector-list">
+              <button class="video-card-btn active" onclick="setYoutubeVideo('dQw4w9WgXcQ', 'playerCiclo3', this)">Ver Registro 3</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SECCIÓN INFERIOR: POSTULA UN CICLO ARTÍSTICO -->
+    <section style="background-color: #E7EBDD; padding: 4rem 2rem; border-top: 1px solid rgba(35, 69, 81, 0.1);">
+      <div style="max-width: 1280px; margin: 0 auto;">
+        
+        <span class="section-tag" style="text-transform: uppercase;">LLAMADO ABIERTO</span>
+        <span class="section-tag" style="text-transform: uppercase; display: block;">POSTULACIONES</span>
+        <h2 style="font-family: var(--font-title); font-size: 2.2rem; color: var(--azul-oscuro); margin-bottom: 1rem; font-weight: 400;">Postula un ciclo artístico</h2>
+        
+        <p style="font-size: 0.95rem; line-height: 1.7; color: #2d3748; max-width: 900px; margin-bottom: 2.5rem; text-align: left;">
+          El museo abre postulaciones de forma permanente para agrupaciones culturales, artistas visuales y creadores locales interesados en presentar propuestas expositivas o culturales.
+        </p>
+
+        <div style="background-color: #ffffff; padding: 2.5rem; border-radius: 4px; border: 1px solid rgba(35, 69, 81, 0.1);">
+          <form>
+            <div class="form-grid-2">
+              <div class="form-group">
+                <label>Nombre y apellido del postulante</label>
+                <input type="text" class="form-control" placeholder="Escribe aquí tu nombre completo">
+              </div>
+              <div class="form-group">
+                <label>Nombre del ciclo artístico</label>
+                <input type="text" class="form-control" placeholder="Escribe el nombre del ciclo artístico">
+              </div>
+              <div class="form-group">
+                <label>Correo electrónico</label>
+                <input type="email" class="form-control" placeholder="tucorreo@ejemplo.cl">
+              </div>
+              <div class="form-group">
+                <label>Disciplina o área artística</label>
+                <input type="text" class="form-control" placeholder="Ej: Pintura, fotografía, artes impresas y grabado">
+              </div>
+              <div class="form-group">
+                <label>Teléfono</label>
+                <input type="text" class="form-control" placeholder="+56 9 1234 5678">
+              </div>
+              <div class="form-group">
+                <label>Descripción de la propuesta</label>
+                <textarea class="form-control" placeholder="Describe brevemente la propuesta artística y temática que te gustaría presentar"></textarea>
+              </div>
+            </div>
+
+            <div class="form-group" style="margin-top: 1rem;">
+              <label>Archivos adjuntos o enlaces</label>
+              <input type="text" class="form-control" placeholder="Adjunta link a dossier, portafolio o material complementario">
+            </div>
+
+            <button type="submit" class="btn-submit" style="margin-top: 1.5rem;">
+              Enviar postulación 
+              <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M7 17L17 7M17 7H7M17 7V17"/></svg>
+            </button>
+
+            <p style="font-size: 0.8rem; color: #4a5568; margin-top: 1.5rem; font-style: italic;">
+              La propuesta será evaluada por el equipo del MUHP y nos pondremos en contacto a través de los datos de contacto proporcionados.
+            </p>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <img src="img/logo-muhp.webp" alt="Museo Histórico de Placilla" class="footer-logo-img">
+        <p style="font-size: 0.85rem; opacity: 0.8; max-width: 280px;">Historia, territorio y memorias compartidas de Placilla de Peñuelas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>EXPLORA EL MUSEO</h4>
+        <ul>
+          <li><a href="historia.html">Nosotros</a></li>
+          <li><a href="batalla.html">Batalla de Placilla</a></li>
+          <li><a href="salto-del-agua.html">Patrimonio natural</a></li>
+          <li><a href="hidroelectrica.html">Patrimonio industrial</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>APRENDE Y PARTICIPA</h4>
+        <ul>
+          <li><a href="arqueologia.html">Arqueología y paleontología</a></li>
+          <li><a href="actividades.html">Actividades</a></li>
+          <li><a href="ciclos.html">Ciclos artísticos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONVERSEMOS</h4>
+        <ul>
+          <li><a href="agenda-tu-visita.html">Agenda tu visita ↗</a></li>
+          <li><a href="contacto.html">Contacto ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MUHP - Museo Histórico de Placilla</p>
+      <p>Memorias abiertas, patrimonio compartido.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT EXTERNO VINCULADO -->
+  <script src="script.js"></script>
+  <script>
+    // Inicialización de las 3 galerías de ciclos artísticos
+    const fotosCiclo1 = ['img/ciclos/ciclo1-1.jpg', 'img/ciclos/ciclo1-2.jpg'];
+    const fotosCiclo2 = ['img/ciclos/ciclo2-1.jpg', 'img/ciclos/ciclo2-2.jpg'];
+    const fotosCiclo3 = ['img/ciclos/ciclo3-1.jpg', 'img/ciclos/ciclo3-2.jpg'];
+
+    // Nota: Como el script base gestiona un estado global simple, cargamos la primera por defecto.
+    initGallery(fotosCiclo1, 'imgCiclo1Main', 'ciclo1Thumbs');
+  </script>
+</body>
+</html>

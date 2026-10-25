@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batalla de Placilla · Museo Histórico de Placilla</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER GLOBAL -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="logo-brand">
+        <img src="img/logo-muhp.webp" alt="Museo Histórico de Placilla" class="logo-img">
+      </a>
+      <div class="header-actions">
+        <a href="contacto.html" class="link-contacto">Contacto</a>
+        <a href="agenda-tu-visita.html" class="btn-planea">Agenda tu visita ↗</a>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav-item-icon" title="Inicio">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <path d="M9 22V12h6v10"/>
+            </svg>
+          </a>
+        </li>
+        <li><a href="historia.html">Nosotros</a></li>
+        <li><a href="batalla.html" class="active">Batalla de Placilla</a></li>
+        <li><a href="salto-del-agua.html">Patrimonio natural</a></li>
+        <li><a href="hidroelectrica.html">Patrimonio industrial</a></li>
+        <li><a href="arqueologia.html">Arqueología y paleontología</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="ciclos.html">Ciclos artísticos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-wrapper" style="padding-bottom: 4rem;">
+      <div class="breadcrumb">INICIO / BATALLA DE PLACILLA</div>
+      
+      <span class="section-tag" style="text-transform: uppercase;">HISTORIA Y MEMORIA</span>
+      <h1 class="page-title" style="text-align: center; margin-bottom: 3rem;">Batalla de Placilla</h1>
+
+      <!-- Fila Superior: Texto y Galería de imágenes con rutas de img batalla -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; margin-bottom: 2.5rem;">
+        
+        <!-- Cuerpos de Texto Fidedignos -->
+        <div style="font-size: 0.95rem; line-height: 1.7; color: #2d3748; display: flex; flex-direction: column; gap: 1.2rem; text-align: left;">
+          <p>
+            Ocurrió en Placilla de Peñuelas, un 28 de agosto de 1891. En nuestro museo exhibimos los objetos que quedaron enterrados en distintas partes de Placilla y contamos una de las historias más tristes que vivió Chile.
+          </p>
+          <p>
+            Más de 5.163 "bajas" de ambos bandos (Balmacedistas y Congresistas), entre muertos y heridos, dejó el saldo de la cruenta batalla que ocurrió en "La Placilla", en menos de 3 horas de lucha. Una de las guerras más violentas y tristes que vivió nuestro país, gatillada por las grandes diferencias ideológicas que llevaron al odio y la división entre chilenos que nada tenían que ver en el conflicto, perdiendo su vida hombres, mujeres y niños.
+          </p>
+          <p>
+            A ellos rendimos un homenaje con nuestras colecciones en nuestro museo emplazado en pleno campo de batalla, y que cada 28 de agosto rendimos nuestros respetos mediante actividades artísticas y culturales en el Museo junto a la comunidad.
+          </p>
+        </div>
+
+        <!-- Galería de imágenes Interactiva (img batalla) -->
+        <div class="gallery-container">
+          <div class="gallery-main-view">
+            <button class="gallery-nav-btn prev">❮</button>
+            <img class="gallery-main-img" src="img batalla/muhp-batalla-de-placilla-1.jpg" alt="Galería Batalla de Placilla">
+            <button class="gallery-nav-btn next">❯</button>
+          </div>
+          <div class="gallery-thumbs">
+            <img src="img batalla/muhp-batalla-de-placilla-1.jpg" class="thumb-item active" alt="Batalla 1" loading="lazy">
+            <img src="img batalla/muhp-batalla-de-placilla-2.jpg" class="thumb-item" alt="Batalla 2" loading="lazy">
+            <img src="img batalla/muhp-batalla-de-placilla-3.jpg" class="thumb-item" alt="Batalla 3" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Fila Inferior: Sección de Videos / Documentales con YouTube -->
+      <div class="video-gallery-container">
+        <span class="section-tag" style="text-transform: uppercase;">CONTENIDO AUDIOVISUAL</span>
+        
+        <div class="video-player-wrapper">
+          <iframe id="youtubePlayer" src="https://www.youtube-nocookie.com/embed/WyHdv2RGbRY" title="Documental Batalla de Placilla" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+        <!-- Lista para cambiar de Video (vinculada con IDs reales) -->
+        <div class="video-selector-list">
+          <button class="video-card-btn active" onclick="setYoutubeVideo('WyHdv2RGbRY', 'youtubePlayer', this)">
+            <strong>Documental principal:</strong> 1891, Ecos de una Batalla
+          </button>
+          <button class="video-card-btn" onclick="setYoutubeVideo('4WmlvyfZe3A', 'youtubePlayer', this)">
+            <strong>Cortometraje:</strong> Memorias de Fuego
+          </button>
+          <button class="video-card-btn" onclick="setYoutubeVideo('SIsobyimZ9k', 'youtubePlayer', this)">
+            <strong>Registro:</strong> Caminata de Recreación Histórica
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <img src="img/logo-muhp.webp" alt="Museo Histórico de Placilla" class="footer-logo-img">
+        <p style="font-size: 0.85rem; opacity: 0.8; max-width: 280px;">Historia, territorio y memorias compartidas de Placilla de Peñuelas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>EXPLORA EL MUSEO</h4>
+        <ul>
+          <li><a href="historia.html">Nosotros</a></li>
+          <li><a href="batalla.html">Batalla de Placilla</a></li>
+          <li><a href="salto-del-agua.html">Patrimonio natural</a></li>
+          <li><a href="hidroelectrica.html">Patrimonio industrial</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>APRENDE Y PARTICIPA</h4>
+        <ul>
+          <li><a href="arqueologia.html">Arqueología y paleontología</a></li>
+          <li><a href="actividades.html">Actividades</a></li>
+          <li><a href="ciclos.html">Ciclos artísticos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONVERSEMOS</h4>
+        <ul>
+          <li><a href="agenda-tu-visita.html">Agenda tu visita ↗</a></li>
+          <li><a href="contacto.html">Contacto ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MUHP - Museo Histórico de Placilla</p>
+      <p>Memorias abiertas, patrimonio compartido.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT GLOBAL EXTERNO -->
+  <script src="script.js"></script>
+</body>
+</html>

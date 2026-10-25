@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arqueología y paleontología · Museo Histórico de Placilla</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER GLOBAL -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="logo-brand">
+        <img src="img/logo-muhp.webp" alt="Museo Histórico de Placilla" class="logo-img">
+      </a>
+      <div class="header-actions">
+        <a href="contacto.html" class="link-contacto">Contacto</a>
+        <a href="agenda-tu-visita.html" class="btn-planea">Agenda tu visita ↗</a>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav-item-icon" title="Inicio">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <path d="M9 22V12h6v10"/>
+            </svg>
+          </a>
+        </li>
+        <li><a href="historia.html">Nosotros</a></li>
+        <li><a href="batalla.html">Batalla de Placilla</a></li>
+        <li><a href="salto-del-agua.html">Patrimonio natural</a></li>
+        <li><a href="hidroelectrica.html">Patrimonio industrial</a></li>
+        <li><a href="arqueologia.html" class="active">Arqueología y paleontología</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="ciclos.html">Ciclos artísticos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-wrapper" style="padding-bottom: 4rem;">
+      <div class="breadcrumb">INICIO / ARQUEOLOGÍA Y PALEONTOLOGÍA</div>
+      
+      <h1 class="page-title" style="text-align: center; margin-bottom: 3rem;">Arqueología y paleontología</h1>
+
+      <!-- Fila Superior: Textos (Izq) y Galería de Fotos (Der) -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; margin-bottom: 2.5rem;">
+        
+        <!-- Cuerpos de Texto Exactos -->
+        <div style="font-size: 0.95rem; line-height: 1.7; color: #2d3748; display: flex; flex-direction: column; gap: 1.2rem; text-align: left;">
+          <p>
+            Al interior del Fundo Las Cenizas, se han reconocido 8 sitios arqueológicos.
+          </p>
+          <p>
+            En los años 1957 y 1958, se constató la existencia de numerosas Piedras Tacitas junto a un arroyo, que hoy se encuentra sin agua y, un cementerio con 70 individuos. En 1980 se realizó una nueva excavación, lo que permitió continuar con la recopilación de información científica. Las piedras tacitas son grandes rocas en las que se han horadado pequeñas cavidades. Su función aún no está clara, pero se piensa que pudieron ocuparse en molienda de grano, pigmentos o también como lugares de culto. Corresponde a una de las manifestaciones culturales más importantes del periodo arcaico.
+          </p>
+          <p>
+            Las numerosas piedras de estas características forman parte del imaginario colectivo de los pobladores de Placilla componiendo el valioso patrimonio cultural local.
+          </p>
+        </div>
+
+        <!-- Columna Derecha: Bloque Galería de Fotos con la carpeta 'img arqueologia' -->
+        <div class="gallery-container">
+          <span class="section-tag" style="text-transform: uppercase;">GALERÍA DE FOTOS</span>
+          <div class="gallery-main-view">
+            <button class="gallery-nav-btn prev" onclick="changeGalleryImage(-1)">❮</button>
+            <img id="imgArqueoMain" src="img arqueologia/muhp-arqueologia-1.jpg" alt="Galería Arqueología">
+            <button class="gallery-nav-btn next" onclick="changeGalleryImage(1)">❯</button>
+          </div>
+          <div class="gallery-thumbs" id="arqueoThumbs">
+            <img src="img arqueologia/muhp-arqueologia-1.jpg" class="thumb-item active" onclick="setGalleryImage(0)" alt="Arqueología 1" loading="lazy">
+            <img src="img arqueologia/muhp-arqueologia-2.jpg" class="thumb-item" onclick="setGalleryImage(1)" alt="Arqueología 2" loading="lazy">
+            <img src="img arqueologia/muhp-arqueologia-3.jpg" class="thumb-item" onclick="setGalleryImage(2)" alt="Arqueología 3" loading="lazy">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Fila 2: Mapa a ANCHO COMPLETO (Ajustado al tamaño de la imagen) -->
+      <div class="gallery-container-full" style="margin-bottom: 2.5rem;">
+        <span class="section-tag" style="text-transform: uppercase; font-weight: 700; color: #234551;">MAPA CON ÁREA DE HALLAZGOS DE FÓSILES EN PLACILLA DE PEÑUELAS</span>
+        <div style="width: 100%; background-color: #b5b095; border-radius: 4px; overflow: hidden; padding: 0.5rem; display: flex; justify-content: center; align-items: center;">
+          <img src="img arqueologia/mapa-arqueologia-muhp.webp" alt="Mapa con área de hallazgos de fósiles en Placilla de Peñuelas" style="width: 100%; height: auto; display: block; border-radius: 2px;" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Fila 3: Videos a ANCHO COMPLETO (ABAJO) -->
+      <div class="video-gallery-container">
+        <span class="section-tag" style="text-transform: uppercase;">VIDEOS / DOCUMENTALES</span>
+        <div class="video-player-wrapper">
+          <iframe id="playerArqueo" src="https://www.youtube-nocookie.com/embed/xdbA8_tnrrM" title="Restos arqueológicos en Lago Peñuelas" allowfullscreen></iframe>
+        </div>
+        <div class="video-selector-list">
+          <button class="video-card-btn active" onclick="setYoutubeVideo('xdbA8_tnrrM', 'playerArqueo', this)">Restos arqueológicos en Lago Peñuelas</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <img src="img/logo-muhp.webp" alt="Museo Histórico de Placilla" class="footer-logo-img">
+        <p style="font-size: 0.85rem; opacity: 0.8; max-width: 280px;">Historia, territorio y memorias compartidas de Placilla de Peñuelas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>EXPLORA EL MUSEO</h4>
+        <ul>
+          <li><a href="historia.html">Nosotros</a></li>
+          <li><a href="batalla.html">Batalla de Placilla</a></li>
+          <li><a href="salto-del-agua.html">Patrimonio natural</a></li>
+          <li><a href="hidroelectrica.html">Patrimonio industrial</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>APRENDE Y PARTICIPA</h4>
+        <ul>
+          <li><a href="arqueologia.html">Arqueología y paleontología</a></li>
+          <li><a href="actividades.html">Actividades</a></li>
+          <li><a href="ciclos.html">Ciclos artísticos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONVERSEMOS</h4>
+        <ul>
+          <li><a href="agenda-tu-visita.html">Agenda tu visita ↗</a></li>
+          <li><a href="contacto.html">Contacto ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MUHP - Museo Histórico de Placilla</p>
+      <p>Memorias abiertas, patrimonio compartido.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT EXTERNO VINCULADO -->
+  <script src="script.js"></script>
+  <script>
+    // Inicialización de la galería con la carpeta 'img arqueologia'
+    const fotosArqueo = [
+      'img arqueologia/muhp-arqueologia-1.jpg',
+      'img arqueologia/muhp-arqueologia-2.jpg',
+      'img arqueologia/muhp-arqueologia-3.jpg'
+    ];
+    initGallery(fotosArqueo, 'imgArqueoMain', 'arqueoThumbs');
+  </script>
+</body>
+</html>

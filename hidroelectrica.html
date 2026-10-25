@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hidroeléctrica · Museo Histórico de Placilla</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER GLOBAL -->
+  <header class="site-header">
+    <div class="header-top">
+      <a href="index.html" class="logo-brand">
+        <img src="img/logo-muhp.webp" alt="Museo Histórico de Placilla" class="logo-img">
+      </a>
+      <div class="header-actions">
+        <a href="contacto.html" class="link-contacto">Contacto</a>
+        <a href="agenda-tu-visita.html" class="btn-planea">Agenda tu visita ↗</a>
+      </div>
+    </div>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li>
+          <a href="index.html" class="nav-item-icon" title="Inicio">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <path d="M9 22V12h6v10"/>
+            </svg>
+          </a>
+        </li>
+        <li><a href="historia.html">Nosotros</a></li>
+        <li><a href="batalla.html">Batalla de Placilla</a></li>
+        <li><a href="salto-del-agua.html">Patrimonio natural</a></li>
+        <li><a href="hidroelectrica.html" class="active">Patrimonio industrial</a></li>
+        <li><a href="arqueologia.html">Arqueología y paleontología</a></li>
+        <li><a href="actividades.html">Actividades</a></li>
+        <li><a href="ciclos.html">Ciclos artísticos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-wrapper" style="padding-bottom: 4rem;">
+      <div class="breadcrumb">INICIO / PATRIMONIO INDUSTRIAL</div>
+      
+      <h1 class="page-title" style="text-align: center; margin-bottom: 3rem;">Hidroeléctrica</h1>
+
+      <!-- Fila Superior: Textos (Izq) y Bloque de Videos (Der) -->
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; margin-bottom: 2.5rem;">
+        
+        <!-- Cuerpos de Texto Exactos -->
+        <div style="font-size: 0.95rem; line-height: 1.7; color: #2d3748; display: flex; flex-direction: column; gap: 1.2rem; text-align: left;">
+          <p>
+            Placilla de Peñuelas fue muy importante en el crecimiento urbano e industrial de Valparaíso, como proveedora de agua potable y en la generación de energía eléctrica.
+          </p>
+          <p>
+            Placilla de Peñuelas fue muy importante en el crecimiento urbano e industrial de Valparaíso, tanto como proveedora de agua potable –para mejorar las condiciones sanitarias de los porteños– como en la generación de energía eléctrica. Para el primer caso, la Sociedad de Consumidores de Agua Potable de Valparaíso, construye en 1869 el tranque "Las Cenizas", y posteriormente en 1900 se inauguró el embalse Peñuelas que daría solución definitiva a este problema, y que en 1952 se convertiría en la Reserva Nacional Lago Peñuelas.
+          </p>
+          <p>
+            Para el segundo caso, Placilla fue fundamental al construirse a comienzos del siglo XX el embalse o tranque "La Luz" que permitió suministrar agua a la Central Hidroeléctrica "El Sauce", y con ello mover sus modernas turbinas Pelton, entregando energía eléctrica y luz a tranvías, fábricas y casas de comercio y las viviendas más acomodadas de Valparaíso hacia 1905.
+          </p>
+        </div>
+
+        <!-- Bloque de Videos de YouTube Vinculado -->
+        <div class="video-gallery-container">
+          <span class="section-tag" style="text-transform: uppercase;">VIDEOS</span>
+          <div class="video-player-wrapper">
+            <iframe id="playerHidro" src="https://www.youtube-nocookie.com/embed/_jNlede5I_s" title="Tranque la Luz y la Central Hidroeléctrica el Sauce" allowfullscreen></iframe>
+          </div>
+          <div class="video-selector-list">
+            <button class="video-card-btn active" onclick="setYoutubeVideo('_jNlede5I_s', 'playerHidro', this)">Tranque la Luz y Central El Sauce</button>
+            <button class="video-card-btn" onclick="setYoutubeVideo('LEDXzVJjaXY', 'playerHidro', this)">Puente La Placilla</button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Fila 2: Ruta / Mapa a ANCHO COMPLETO -->
+      <div class="gallery-container-full" style="margin-bottom: 2.5rem;">
+        <span class="section-tag" style="text-transform: uppercase;">RUTA / MAPA</span>
+        <div style="position: relative; width: 100%; height: 380px; background-color: #b5b095; border-radius: 4px; overflow: hidden;">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13346.51322122678!2d-71.5542898!3d-33.1187428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689de758cd33dbd%3A0x8dd38760ba26c91d!2sTranque%20La%20Luz%2C%20Valpara%C3%ADso!5e0!3m2!1ses!2scl!4v1700000000000!5m2!1ses!2scl" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Fila 3: Galería de Fotos a Ancho Completo con la carpeta 'img hidroelectrica' -->
+      <div class="gallery-container-full">
+        <span class="section-tag" style="text-transform: uppercase;">GALERÍA DE FOTOS</span>
+        
+        <div class="gallery-main-view-large">
+          <button class="gallery-nav-btn prev" onclick="changeGalleryImage(-1)">❮</button>
+          <img id="imgHidroMain" src="img hidroelectrica/muhp-hidroelectrica-1.jpg" alt="Galería Hidroeléctrica">
+          <button class="gallery-nav-btn next" onclick="changeGalleryImage(1)">❯</button>
+        </div>
+
+        <div class="gallery-thumbs-large" id="hidroThumbs">
+          <img src="img hidroelectrica/muhp-hidroelectrica-1.jpg" class="thumb-item-large active" onclick="setGalleryImage(0)" alt="Hidroeléctrica 1" loading="lazy">
+          <img src="img hidroelectrica/muhp-hidroelectrica-2.jpg" class="thumb-item-large" onclick="setGalleryImage(1)" alt="Hidroeléctrica 2" loading="lazy">
+          <img src="img hidroelectrica/muhp-hidroelectrica-3.jpg" class="thumb-item-large" onclick="setGalleryImage(2)" alt="Hidroeléctrica 3" loading="lazy">
+          <img src="img hidroelectrica/muhp-hidroelectrica-4.jpg" class="thumb-item-large" onclick="setGalleryImage(3)" alt="Hidroeléctrica 4" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <footer class="site-footer">
+    <div class="footer-grid">
+      <div>
+        <img src="img/logo-muhp.webp" alt="Museo Histórico de Placilla" class="footer-logo-img">
+        <p style="font-size: 0.85rem; opacity: 0.8; max-width: 280px;">Historia, territorio y memorias compartidas de Placilla de Peñuelas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>EXPLORA EL MUSEO</h4>
+        <ul>
+          <li><a href="historia.html">Nosotros</a></li>
+          <li><a href="batalla.html">Batalla de Placilla</a></li>
+          <li><a href="salto-del-agua.html">Patrimonio natural</a></li>
+          <li><a href="hidroelectrica.html">Patrimonio industrial</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>APRENDE Y PARTICIPA</h4>
+        <ul>
+          <li><a href="arqueologia.html">Arqueología y paleontología</a></li>
+          <li><a href="actividades.html">Actividades</a></li>
+          <li><a href="ciclos.html">Ciclos artísticos</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>CONVERSEMOS</h4>
+        <ul>
+          <li><a href="agenda-tu-visita.html">Agenda tu visita ↗</a></li>
+          <li><a href="contacto.html">Contacto ↗</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 MUHP - Museo Histórico de Placilla</p>
+      <p>Memorias abiertas, patrimonio compartido.</p>
+    </div>
+  </footer>
+
+  <!-- SCRIPT EXTERNO VINCULADO -->
+  <script src="script.js"></script>
+  <script>
+    // Inicialización de la galería con la carpeta 'img hidroelectrica'
+    const fotosHidro = [
+      'img hidroelectrica/muhp-hidroelectrica-1.jpg',
+      'img hidroelectrica/muhp-hidroelectrica-2.jpg',
+      'img hidroelectrica/muhp-hidroelectrica-3.jpg',
+      'img hidroelectrica/muhp-hidroelectrica-4.jpg'
+    ];
+    initGallery(fotosHidro, 'imgHidroMain', 'hidroThumbs');
+  </script>
+</body>
+</html>
