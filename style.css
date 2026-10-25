@@ -912,3 +912,9 @@ textarea.form-control {
   .nav-list { overflow-x: auto; white-space: nowrap; }
   .footer-grid { grid-template-columns: 1fr 1fr; }
 }
+
+@media (max-width: 1024px) {
+  div[style*="grid-template-columns: 1fr 1fr"] {
+    grid-template-columns: 1fr !important;
+  }
+}
